@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>Quotes!</title>
+		<link rel="stylesheet" href="/stylesheets/style.css" />
+		<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+		<script type="text/javascript">
+			// Javascript goes here
+		</script>
+	</head>
+	<body>
+		<h1>Quotes of the Dojo</h1>
+		<% for (let i = 0; i < quotes.length; i++){ %>
+			<p>Name: <%= quotes[i].name %></p>
+			<p>Quote: <%= quotes[i].quote %></p>
+			<hr>
+		<% } %>
+		<a href="/"><button type="button">Add another quote</button></a>
+	</body>
+</html>
